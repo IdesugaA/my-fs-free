@@ -1,0 +1,64 @@
+server:
+  port: 8081
+  undertow:
+    threads:
+      io: 8
+      # 它的值设置取决于系统线程执行任务的阻塞系数，默认值是IO线程数*8
+      worker: 256
+    buffer-size: 1024
+    # 是否分配的直接内存(NIO直接分配的堆外内存)
+    direct-buffers: true
+spring:
+  application:
+    name: free-fs
+  profiles:
+    active: dev
+  jackson:
+    time-zone: GMT+8
+    date-format: yyyy-MM-dd HH:mm:ss
+  servlet:
+    multipart:
+      max-file-size: 100MB
+      max-request-size: 100MB
+  thymeleaf:
+    cache: false
+    prefix: classpath:/templates/
+    suffix: .html
+    encoding: UTF-8
+    mode: HTML
+#  web:
+#    resources:
+#      static-locations: classpath:/static
+
+--- # 日志配置
+logging:
+  config: classpath:/fs-logback.xml
+
+--- # mybatis-flex配置
+mybatis-flex:
+  # 搜索指定包别名
+  type-aliases-package: com.free.fs.core.domain
+  # 不支持多包, 如有需要可在注解配置 或 提升扫包等级：com.**.**.mapper
+  mapper-package: com.free.fs.core.mapper
+  # 配置mapper的扫描，找到所有的mapper.xml映射文件
+  mapper-locations: classpath*:mapper/*Mapper.xml
+  configuration:
+    ## 以下为mybatis原生配置 https://mybatis.org/mybatis-3/zh/configuration.html
+    # 自动驼峰命名规则（camel case）映射
+    map_underscore_to_camel_case: true
+    # MyBatis 自动映射策略
+    # NONE：不启用 PARTIAL：只对非嵌套 resultMap 自动映射 FULL：对所有 resultMap 自动映射
+    auto_mapping_behavior: FULL
+    # MyBatis 自动映射时未知列或未知属性处理策
+    # NONE：不做处理 WARNING：打印相关警告 FAILING：抛出异常和详细信息
+    auto_mapping_unknown_column_behavior: NONE
+    # 更详细的日志输出 会有性能损耗 org.apache.ibatis.logging.stdout.StdOutImpl
+    # 关闭日志记录 org.apache.ibatis.logging.nologging.NoLoggingImpl
+    # 默认日志输出 org.apache.ibatis.logging.slf4j.Slf4jImpl
+    #log_impl: org.apache.ibatis.logging.stdout.StdOutImpl
+    logImpl: org.apache.ibatis.logging.nologging.NoLoggingImpl
+    cacheEnabled: true
+  global-config:
+    # 是否控制台打印 MyBatis-Flex 的 LOGO 及版本号
+    print-banner: false
+
