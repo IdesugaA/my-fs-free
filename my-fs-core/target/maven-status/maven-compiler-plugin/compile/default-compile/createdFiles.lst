@@ -19,8 +19,14 @@ com\free\my\fs\core\service\RoleService.class
 com\free\my\fs\core\domain\dto\UpdateFileNameDTO.class
 com\free\my\fs\core\domain\dto\UpdatePasswordDTO.class
 com\free\my\fs\core\service\impl\UserRoleServiceImpl.class
+com\free\my\fs\core\mapper\RoleMapper.class
+com\free\my\fs\core\mapper\RolePermissionMapper.class
+com\free\my\fs\core\mapper\UserMapper.class
 com\free\my\fs\core\domain\table\UserTableDef.class
 com\free\my\fs\core\domain\table\PermissionTableDef.class
 com\free\my\fs\core\domain\dto\UserDTO.class
+com\free\my\fs\core\mapper\FileMapper.class
+com\free\my\fs\core\mapper\UserRoleMapper.class
 com\free\my\fs\core\service\RolePermissionService.class
 com\free\my\fs\core\domain\Permission.class
+com\free\my\fs\core\mapper\PermissionMapper.class

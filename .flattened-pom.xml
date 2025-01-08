@@ -12,8 +12,8 @@
     <module>my-fs-admin</module>
   </modules>
   <properties>
-    <maven-compiler-plugin.verison>3.11.0</maven-compiler-plugin.verison>
     <minio.version>8.4.3</minio.version>
+    <maven-compiler-plugin.verison>3.11.0</maven-compiler-plugin.verison>
     <HikariCP.version>5.0.1</HikariCP.version>
     <hutool.version>5.8.28</hutool.version>
     <fastjson2.version>2.0.51</fastjson2.version>

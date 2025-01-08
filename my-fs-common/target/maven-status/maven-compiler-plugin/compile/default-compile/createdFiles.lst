@@ -1,8 +1,15 @@
 com\free\my\fs\common\constant\CommonConstant.class
+com\free\my\fs\common\properties\FsServerProperties$LocalProperties.class
 com\free\my\fs\common\domain\CaptchaVo.class
-com\free\my\fs\common\domain\CaptchaVo$CaptchaVoBuilder.class
 com\free\my\fs\common\domain\Result.class
 com\free\my\fs\common\domain\FileBo.class
-com\free\my\fs\common\storage\IFileStorage.class
 com\free\my\fs\common\domain\Dtree.class
+META-INF\spring-configuration-metadata.json
 com\free\my\fs\common\storage\IFileStorageProvider.class
+com\free\my\fs\common\properties\FsServerProperties$QiniuProperties.class
+com\free\my\fs\common\storage\StorageType.class
+com\free\my\fs\common\domain\CaptchaVo$CaptchaVoBuilder.class
+com\free\my\fs\common\storage\IFileStorage.class
+com\free\my\fs\common\properties\FsServerProperties$MinioProperties.class
+com\free\my\fs\common\properties\FsServerProperties.class
+com\free\my\fs\common\properties\FsServerProperties$AliyunOssProperties.class

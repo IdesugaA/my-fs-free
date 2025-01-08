@@ -1,0 +1,26 @@
+2025-01-08 09:20:39 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2025-01-08 09:20:40 [main] INFO  com.free.my.fs.FsAdminApplication - Starting FsAdminApplication using Java 17.0.12 with PID 4284 (D:\Project\my-free-fs\my-free-fs\my-fs-admin\target\classes started by ye in D:\Project\my-free-fs\my-free-fs\my-fs-admin)
+2025-01-08 09:20:40 [main] INFO  com.free.my.fs.FsAdminApplication - The following 1 profile is active: "dev"
+2025-01-08 09:20:40 [main] INFO  io.undertow.servlet - Initializing Spring embedded WebApplicationContext
+2025-01-08 09:20:40 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 767 ms
+2025-01-08 09:20:41 [main] INFO  io.undertow - starting server: Undertow - 2.3.13.Final
+2025-01-08 09:20:41 [main] INFO  org.xnio - XNIO version 3.8.8.Final
+2025-01-08 09:20:41 [main] INFO  org.xnio.nio - XNIO NIO Implementation Version 3.8.8.Final
+2025-01-08 09:20:41 [main] INFO  org.jboss.threads - JBoss Threads version 3.5.0.Final
+2025-01-08 09:20:41 [main] INFO  o.s.b.w.e.undertow.UndertowWebServer - Undertow started on port 8081 (http) with context path '/'
+2025-01-08 09:20:41 [main] INFO  com.free.my.fs.FsAdminApplication - Started FsAdminApplication in 1.814 seconds (process running for 2.405)
+2025-01-08 09:20:55 [RMI TCP Connection(2)-127.0.0.1] INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+2025-01-08 09:20:55 [RMI TCP Connection(2)-127.0.0.1] INFO  io.undertow - stopping server: Undertow - 2.3.13.Final
+2025-01-08 10:10:35 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2025-01-08 10:10:36 [main] INFO  com.free.my.fs.FsAdminApplication - Starting FsAdminApplication using Java 17.0.12 with PID 22464 (D:\Project\my-free-fs\my-free-fs\my-fs-admin\target\classes started by ye in D:\Project\my-free-fs\my-free-fs\my-fs-admin)
+2025-01-08 10:10:36 [main] INFO  com.free.my.fs.FsAdminApplication - The following 1 profile is active: "dev"
+2025-01-08 10:10:36 [main] INFO  io.undertow.servlet - Initializing Spring embedded WebApplicationContext
+2025-01-08 10:10:36 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 911 ms
+2025-01-08 10:10:37 [main] INFO  io.undertow - starting server: Undertow - 2.3.13.Final
+2025-01-08 10:10:37 [main] INFO  org.xnio - XNIO version 3.8.8.Final
+2025-01-08 10:10:37 [main] INFO  org.xnio.nio - XNIO NIO Implementation Version 3.8.8.Final
+2025-01-08 10:10:37 [main] INFO  org.jboss.threads - JBoss Threads version 3.5.0.Final
+2025-01-08 10:10:37 [main] INFO  o.s.b.w.e.undertow.UndertowWebServer - Undertow started on port 8081 (http) with context path '/'
+2025-01-08 10:10:37 [main] INFO  com.free.my.fs.FsAdminApplication - Started FsAdminApplication in 1.929 seconds (process running for 2.422)
+2025-01-08 10:10:42 [RMI TCP Connection(2)-127.0.0.1] INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+2025-01-08 10:10:42 [RMI TCP Connection(2)-127.0.0.1] INFO  io.undertow - stopping server: Undertow - 2.3.13.Final

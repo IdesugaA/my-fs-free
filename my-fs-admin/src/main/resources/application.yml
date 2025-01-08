@@ -10,7 +10,7 @@ server:
     direct-buffers: true
 spring:
   application:
-    name: free-fs
+    name: my-free-fs
   profiles:
     active: dev
   jackson:
@@ -37,9 +37,9 @@ logging:
 --- # mybatis-flex配置
 mybatis-flex:
   # 搜索指定包别名
-  type-aliases-package: com.free.fs.core.domain
+  type-aliases-package: com.free.my.fs.core.domain
   # 不支持多包, 如有需要可在注解配置 或 提升扫包等级：com.**.**.mapper
-  mapper-package: com.free.fs.core.mapper
+  mapper-package: com.free.my.fs.core.mapper
   # 配置mapper的扫描，找到所有的mapper.xml映射文件
   mapper-locations: classpath*:mapper/*Mapper.xml
   configuration:
