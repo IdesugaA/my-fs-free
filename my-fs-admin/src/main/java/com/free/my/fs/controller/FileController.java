@@ -11,6 +11,7 @@ import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.multipart.MultipartFile;
 
 import com.alibaba.fastjson2.JSON;
+import com.free.my.fs.common.annotation.Preview;
 import com.free.my.fs.common.domain.Dtree;
 import com.free.my.fs.common.domain.Result;
 import com.free.my.fs.core.domain.FileInfo;

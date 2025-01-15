@@ -1,6 +1,8 @@
 package com.free.my.fs.common.domain;
 
 import com.free.my.fs.common.constant.CommonConstant;
+import com.free.my.fs.common.exception.BusinessException;
+import com.free.my.fs.common.utils.FileUtil;
 
 import lombok.Data;
 import org.springframework.web.multipart.MultipartFile;
@@ -96,45 +98,45 @@ public class FileBo implements Serializable {
     private String dirIds;
 
     public static FileBo build(MultipartFile file) {
-//
-//        //判断文件是否为空
-//        if (file.isEmpty()) {
-//            throw new BusinessException("文件不能为空");
-//        }
-//        //判断文件后缀名是否合法
-//        int dotPos = file.getOriginalFilename().lastIndexOf(CommonConstant.SUFFIX_SPLIT);
-//        if (dotPos < 0) {
-//            throw new BusinessException("文件名称不合法");
-//        }
-//        //获取文件大小
-//        Long size = file.getSize();
-//        //文件名
-//        String orgName = file.getOriginalFilename();
-//        String name = FileUtil.getFileName(orgName);
-//        //文件后缀名
-//        String fileExt = FileUtil.getFileSuffix(orgName);
-//        // 判断是否是合法的文件后缀
-//        if (!FileUtil.isFileAllowed(fileExt)) {
-//            throw new BusinessException("文件类型不符合要求");
-//        }
-//        String type;
-//        if (FileUtil.isCode(fileExt)) {
-//            type = "code";
-//        } else {
-//            type = fileExt;
-//        }
-//        //生成新的文件名
-//        String fileName = UUID.randomUUID().toString().replaceAll("-", "") + "." + fileExt;
-//        FileBo fileBo = new FileBo();
-//        fileBo.setSuffix(fileExt);
-//        fileBo.setSize(size);
-//        fileBo.setFileName(fileName);
-//        fileBo.setName(name);
-//        fileBo.setIsImg(FileUtil.isImg(fileExt));
-//        fileBo.setIsDir(Boolean.FALSE);
-//        fileBo.setPutTime(new Date());
-//        fileBo.setType(type);
-//        return fileBo;
-    	return null;
+
+        //判断文件是否为空
+        if (file.isEmpty()) {
+            throw new BusinessException("文件不能为空");
+        }
+        //判断文件后缀名是否合法
+        int dotPos = file.getOriginalFilename().lastIndexOf(CommonConstant.SUFFIX_SPLIT);
+        if (dotPos < 0) {
+            throw new BusinessException("文件名称不合法");
+        }
+        //获取文件大小
+        Long size = file.getSize();
+        //文件名
+        String orgName = file.getOriginalFilename();
+        String name = FileUtil.getFileName(orgName);
+        //文件后缀名
+        String fileExt = FileUtil.getFileSuffix(orgName);
+        // 判断是否是合法的文件后缀
+        if (!FileUtil.isFileAllowed(fileExt)) {
+            throw new BusinessException("文件类型不符合要求");
+        }
+        String type;
+        if (FileUtil.isCode(fileExt)) {
+            type = "code";
+        } else {
+            type = fileExt;
+        }
+        //生成新的文件名
+        String fileName = UUID.randomUUID().toString().replaceAll("-", "") + "." + fileExt;
+        FileBo fileBo = new FileBo();
+        fileBo.setSuffix(fileExt);
+        fileBo.setSize(size);
+        fileBo.setFileName(fileName);
+        fileBo.setName(name);
+        fileBo.setIsImg(FileUtil.isImg(fileExt));
+        fileBo.setIsDir(Boolean.FALSE);
+        fileBo.setPutTime(new Date());
+        fileBo.setType(type);
+        return fileBo;
+
     }
 }

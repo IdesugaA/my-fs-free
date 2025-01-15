@@ -11,5 +11,6 @@ com\free\my\fs\common\storage\StorageType.class
 com\free\my\fs\common\domain\CaptchaVo$CaptchaVoBuilder.class
 com\free\my\fs\common\storage\IFileStorage.class
 com\free\my\fs\common\properties\FsServerProperties$MinioProperties.class
+com\free\my\fs\common\annotation\Preview.class
 com\free\my\fs\common\properties\FsServerProperties.class
 com\free\my\fs\common\properties\FsServerProperties$AliyunOssProperties.class
